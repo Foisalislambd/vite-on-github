@@ -4,6 +4,7 @@
 
 [![npm version](https://img.shields.io/npm/v/vite-on-github.svg)](https://www.npmjs.com/package/vite-on-github)
 [![license](https://img.shields.io/npm/l/vite-on-github.svg)](LICENSE)
+[![GitHub](https://img.shields.io/github/stars/Foisalislambd/vite-on-github?style=social)](https://github.com/Foisalislambd/vite-on-github)
 
 > **One command** to prepare any Vite project for **GitHub Pages** — auto config, base paths, CI, and router setup.
 
