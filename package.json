@@ -1,0 +1,64 @@
+{
+  "name": "vite-on-github",
+  "version": "1.0.0",
+  "description": "One command to prepare any Vite project for GitHub Pages — auto config, base paths, CI, and router setup",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "vite-on-github": "./bin/vite-on-github.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vite",
+    "github",
+    "github-pages",
+    "deploy",
+    "ci",
+    "base-path",
+    "vite-basepath",
+    "automation",
+    "cli"
+  ],
+  "author": "Foisalislambd",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foisalislambd/vite-on-github.git"
+  },
+  "homepage": "https://github.com/Foisalislambd/vite-on-github#readme",
+  "bugs": {
+    "url": "https://github.com/Foisalislambd/vite-on-github/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.10.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "vite": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vite": {
+      "optional": true
+    }
+  }
+}
