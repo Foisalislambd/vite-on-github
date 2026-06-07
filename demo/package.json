@@ -1,17 +1,21 @@
 {
-  "name": "demo",
+  "name": "vite-on-github-demo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/postbuild.mjs",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:pages": "npm run build && npx serve dist -l 4178"
   },
+  "homepage": "https://foisalislambd.github.io/vite-on-github/",
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -25,6 +29,7 @@
     "globals": "^17.6.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.12"
+    "vite": "^8.0.12",
+    "vite-basepath": "^1.0.1"
   }
 }

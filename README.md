@@ -7,6 +7,8 @@
 
 No more fighting with `base` paths, broken assets, or manual GitHub Actions YAML.
 
+**Live demo:** [foisalislambd.github.io/vite-on-github](https://foisalislambd.github.io/vite-on-github/) (built from `/demo`)
+
 ---
 
 ## The Problem
@@ -134,6 +136,21 @@ This package uses **[vite-basepath](https://www.npmjs.com/package/vite-basepath)
 - Routers: `getBase()` returns the correct `basename` / `history` base
 
 Same build works everywhere — root, subfolder, or nested path.
+
+---
+
+## Demo site
+
+The `/demo` folder is a full documentation site (same design as [vite-basepath](https://github.com/Foisalislambd/vite-basepath)) adapted for **vite-on-github**. It deploys to GitHub Pages via `.github/workflows/deploy-demo.yml`.
+
+```bash
+cd demo
+npm install
+npm run dev      # local preview
+npm run build    # production build + 404.html for Pages
+```
+
+After pushing to GitHub, enable **Settings → Pages → GitHub Actions** as the source.
 
 ---
 
