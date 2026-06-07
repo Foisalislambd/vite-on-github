@@ -1,5 +1,7 @@
 # vite-on-github
 
+![vite-on-github banner](./assets/vite-on-github-banner.png)
+
 [![npm version](https://img.shields.io/npm/v/vite-on-github.svg)](https://www.npmjs.com/package/vite-on-github)
 [![license](https://img.shields.io/npm/l/vite-on-github.svg)](LICENSE)
 
